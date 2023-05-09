@@ -21,9 +21,11 @@ const RegisterScreen = ({navigation}) => {
     phonenumber: '',
     password: '',
   });
+  console.log(inputs);
 
   const [error, setError] = useState({});
   const [isLoading, setIsLoading] = useState(false);
+  console.log(error);
 
   const Validate = () => {
     Keyboard.dismiss();
